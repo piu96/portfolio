@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Sutrishna Bera | Senior Full Stack &amp; Backend Engineer</title>
+  <meta name="description" content="Portfolio of Sutrishna Bera – Senior Full Stack &amp; Backend Developer with 6+ years experience in Node.js, Python (FastAPI), React.js, Microservices, AWS, and Generative AI systems.">
+  <meta name="keywords" content="Sutrishna Bera, Full Stack Developer, Backend Developer, Node.js, FastAPI, Python, React, PostgreSQL, AWS, Microservices, Kolkata, Software Engineer">
+  <meta name="author" content="Sutrishna Bera">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Sutrishna Bera | Senior Full Stack &amp; Backend Engineer">
+  <meta property="og:description" content="Senior Full Stack &amp; Backend Engineer with 6+ years experience building scalable APIs, microservices, and AI integrations.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/profile.jpg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Interactive Particle Network Canvas -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Ambient Background Lighting -->
+  <div class="ambient-glow">
+    <div class="glow-circle glow-1"></div>
+    <div class="glow-circle glow-2"></div>
+    <div class="glow-circle glow-3"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="logo-badge">SB</div>
+        <span>Sutrishna Bera</span>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#architecture" class="nav-link">Architecture</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#codebase" class="nav-link">Codebase</a></li>
+        <li><a href="#terminal" class="nav-link">Terminal</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <!-- Interactive Theme Switcher -->
+        <div class="theme-picker" title="Switch Accent Theme">
+          <span class="theme-dot cyan" data-theme="cyan" title="Cyan Neon"></span>
+          <span class="theme-dot violet" data-theme="violet" title="Cyber Violet"></span>
+          <span class="theme-dot emerald" data-theme="emerald" title="Matrix Emerald"></span>
+        </div>
+
+        <a href="assets/Sutrishna_Bera_Resume.pdf" download class="btn btn-primary btn-sm" id="navResumeBtn">
+          📄 Resume
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-status">
+            <span class="status-dot"></span>
+            <span>Available for Senior Full-Stack &amp; Backend Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Sutrishna Bera</span>
+          </h1>
+
+          <!-- Creative Dynamic Typewriter Headline -->
+          <div class="hero-typewriter-container">
+            <span>Building </span>
+            <span id="typewriterText" class="hero-typewriter"></span>
+            <span class="typing-cursor"></span>
+          </div>
+
+          <p class="hero-bio">
+            I build resilient end-to-end applications, high-throughput microservices, and event-driven backends. With <strong>6+ years</strong> of full-stack engineering experience, I specialize in <strong>Node.js, Express, Python (FastAPI), React.js</strong>, message queues with <strong>RabbitMQ</strong>, cloud deployments on <strong>AWS</strong>, and modern <strong>Generative AI &amp; RAG</strong> workflows.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#architecture" class="btn btn-primary">
+              ⚡ Test Live Architecture Flow
+            </a>
+            <a href="#projects" class="btn btn-outline">
+              🚀 View Projects
+            </a>
+            <a href="assets/Sutrishna_Bera_Resume.pdf" download class="btn btn-outline">
+              📥 Download CV
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>6<span>+</span></h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+              <h3>20<span>+</span></h3>
+              <p>Projects Shipped</p>
+            </div>
+            <div class="stat-item">
+              <h3>6<span>+</span></h3>
+              <p>Carrier Integrations</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-glow-ring"></div>
+            <div class="avatar-card">
+              <img src="assets/profile.jpg" alt="Sutrishna Bera - Senior Full Stack &amp; Backend Developer" class="avatar-img">
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top">
+              <span class="badge-icon">⚡</span>
+              <span>FastAPI · Node · React</span>
+            </div>
+
+            <div class="floating-badge badge-bottom">
+              <span class="badge-icon">☁️</span>
+              <span>AWS &amp; RabbitMQ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREATIVE FEATURE 1: Interactive System Architecture Playground -->
+  <section class="playground-section" id="architecture">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Interactive Architecture Demo</div>
+        <h2 class="section-title">End-to-End System Pipeline Simulator</h2>
+        <p class="section-desc">Click a scenario below to watch how live data traverses from the client interface through gateways, event queues, and atomic database engines.</p>
+      </div>
+
+      <div class="system-flow-container">
+        <!-- Controls Bar -->
+        <div class="flow-controls-bar">
+          <div class="flow-title-wrapper">
+            <h3>⚡ Architecture Flow Pipeline</h3>
+            <p>Select an architectural event to simulate real-time processing:</p>
+          </div>
+          <div class="simulation-buttons">
+            <button class="sim-btn active" data-sim="order">
+              📦 Track Courier Order (ShipTech)
+            </button>
+            <button class="sim-btn" data-sim="ai">
+              🤖 Run AI Stats RAG (Cricket AI)
+            </button>
+            <button class="sim-btn" data-sim="wallet">
+              💰 Atomic Ledger Lock (Finance)
+            </button>
+          </div>
+        </div>
+
+        <!-- 5-Node Architecture Flow Track -->
+        <div class="system-nodes-track">
+          <!-- Node 1 -->
+          <div class="system-node active-node" id="nodeClient">
+            <div class="node-icon">🌐</div>
+            <div class="node-title">Client UI</div>
+            <div class="node-sub">React.js / Webhook</div>
+            <span class="node-arrow">➔</span>
+          </div>
+
+          <!-- Node 2 -->
+          <div class="system-node" id="nodeGateway">
+            <div class="node-icon">🛡️</div>
+            <div class="node-title">API Gateway</div>
+            <div class="node-sub">JWT / Rate Limiter</div>
+            <span class="node-arrow">➔</span>
+          </div>
+
+          <!-- Node 3 -->
+          <div class="system-node" id="nodeCore">
+            <div class="node-icon">⚡</div>
+            <div class="node-title">Backend Engine</div>
+            <div class="node-sub">FastAPI / Node.js</div>
+            <span class="node-arrow">➔</span>
+          </div>
+
+          <!-- Node 4 -->
+          <div class="system-node" id="nodeQueue">
+            <div class="node-icon">📨</div>
+            <div class="node-title">Event Broker</div>
+            <div class="node-sub">RabbitMQ Queues</div>
+            <span class="node-arrow">➔</span>
+          </div>
+
+          <!-- Node 5 -->
+          <div class="system-node" id="nodeDB">
+            <div class="node-icon">💾</div>
+            <div class="node-title">Database / Ledger</div>
+            <div class="node-sub">PostgreSQL / Redis</div>
+          </div>
+        </div>
+
+        <!-- Real-Time Console Log Box -->
+        <div class="flow-terminal">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="tdot red"></span>
+              <span class="tdot yellow"></span>
+              <span class="tdot green"></span>
+            </div>
+            <span>system_pipeline_event_stream.log</span>
+            <span>STATUS: 200 OK</span>
+          </div>
+          <div class="terminal-body" id="flowTerminalBody">⚡ System initialized. Click any simulation scenario above to trace the live pipeline flow!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">About Me</div>
+        <h2 class="section-title">Engineering With Craft &amp; Purpose</h2>
+        <p class="section-desc">Focused on building clean systems that solve real business problems without unnecessary complexity.</p>
+      </div>
+
+      <div class="skill-category-card" style="max-width: 900px; margin: 0 auto; padding: 2.25rem;">
+        <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.25rem;">
+          I am a Senior Backend &amp; Full-Stack Developer based in <strong>Kolkata, India</strong> with a degree in Computer Science &amp; Engineering. Over the past 6+ years, I have architected and deployed solutions across logistics, fintech, sports tech, and SaaS platforms — transforming complex business requirements into high-performance APIs and clean user experiences.
+        </p>
+        <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
+          My engineering approach emphasizes maintainable service design, database index tuning, fail-safe asynchronous message queues, and tight collaboration between frontend, product, and QA teams. Right now, I am actively building projects combining <strong>Generative AI systems (RAG, LangChain, Vector Databases)</strong> with robust backend microservices.
+        </p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#contact" class="btn btn-primary btn-sm">Let's Connect</a>
+          <button class="btn btn-outline btn-sm copy-email-btn">📋 Copy Email (berasutrishna96@gmail.com)</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Full-Stack Capabilities</div>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+        <p class="section-desc">The modern stack I use to build scalable web applications from front to back.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Backend Card -->
+        <div class="skill-category-card">
+          <div class="card-header-icon">
+            <div class="cat-icon">⚙️</div>
+            <h3 class="cat-title">Backend Architecture</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tech-tag highlight-tag">Node.js</span>
+            <span class="tech-tag highlight-tag">Express.js</span>
+            <span class="tech-tag highlight-tag">Python (FastAPI)</span>
+            <span class="tech-tag">RESTful APIs</span>
+            <span class="tech-tag">Microservices</span>
+            <span class="tech-tag">WebSockets</span>
+            <span class="tech-tag">Socket.IO</span>
+            <span class="tech-tag">JWT &amp; RBAC</span>
+          </div>
+        </div>
+
+        <!-- Frontend Card -->
+        <div class="skill-category-card">
+          <div class="card-header-icon">
+            <div class="cat-icon">🎨</div>
+            <h3 class="cat-title">Frontend &amp; UI</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tech-tag highlight-tag">React.js</span>
+            <span class="tech-tag highlight-tag">JavaScript (ES6+)</span>
+            <span class="tech-tag">HTML5 &amp; CSS3</span>
+            <span class="tech-tag">Responsive UI</span>
+            <span class="tech-tag">Single Page Apps (SPA)</span>
+            <span class="tech-tag">Component State</span>
+          </div>
+        </div>
+
+        <!-- GenAI Focus Card -->
+        <div class="skill-category-card" style="border-color: rgba(99, 102, 241, 0.45);">
+          <div class="card-header-icon">
+            <div class="cat-icon" style="background: rgba(99, 102, 241, 0.15); color: #818cf8;">✨</div>
+            <h3 class="cat-title">GenAI &amp; LLMs <span style="font-size:0.75rem; color:var(--accent-primary); font-weight:normal;">(Focus Area)</span></h3>
+          </div>
+          <div class="tag-list">
+            <span class="tech-tag highlight-tag">RAG Architecture</span>
+            <span class="tech-tag highlight-tag">LangChain</span>
+            <span class="tech-tag highlight-tag">Vector Databases</span>
+            <span class="tech-tag">OpenAI API</span>
+            <span class="tech-tag">Anthropic Claude API</span>
+            <span class="tech-tag">Prompt Engineering</span>
+          </div>
+        </div>
+
+        <!-- Databases Card -->
+        <div class="skill-category-card">
+          <div class="card-header-icon">
+            <div class="cat-icon">🗄️</div>
+            <h3 class="cat-title">Databases &amp; ORM</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tech-tag highlight-tag">PostgreSQL</span>
+            <span class="tech-tag highlight-tag">MySQL</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Sequelize ORM</span>
+            <span class="tech-tag">Mongoose ODM</span>
+            <span class="tech-tag">Query Optimization</span>
+            <span class="tech-tag">Schema Indexing</span>
+          </div>
+        </div>
+
+        <!-- Cloud & Queues Card -->
+        <div class="skill-category-card">
+          <div class="card-header-icon">
+            <div class="cat-icon">☁️</div>
+            <h3 class="cat-title">Cloud &amp; DevOps</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tech-tag highlight-tag">RabbitMQ</span>
+            <span class="tech-tag highlight-tag">Webhooks</span>
+            <span class="tech-tag">Docker Containerization</span>
+            <span class="tech-tag">AWS EC2</span>
+            <span class="tech-tag">AWS S3</span>
+            <span class="tech-tag">PM2 Manager</span>
+            <span class="tech-tag">CI/CD Pipelines</span>
+          </div>
+        </div>
+
+        <!-- Tools Card -->
+        <div class="skill-category-card">
+          <div class="card-header-icon">
+            <div class="cat-icon">🛠️</div>
+            <h3 class="cat-title">Tools &amp; Workflow</h3>
+          </div>
+          <div class="tag-list">
+            <span class="tech-tag">Git &amp; GitHub</span>
+            <span class="tech-tag">Postman</span>
+            <span class="tech-tag">DBeaver</span>
+            <span class="tech-tag">VS Code</span>
+            <span class="tech-tag">Agile / Scrum</span>
+            <span class="tech-tag">Code Reviews</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Featured Work</div>
+        <h2 class="section-title">Key Projects &amp; Platforms</h2>
+        <p class="section-desc">Real-world applications built for high reliability, live courier tracking, financial ledgers, and AI insights.</p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="logistics">Logistics &amp; SaaS</button>
+        <button class="filter-btn" data-filter="ai">AI &amp; Analytics</button>
+        <button class="filter-btn" data-filter="web">Web &amp; Community</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Project 1: ShipTech -->
+        <div class="project-card" data-category="logistics">
+          <div>
+            <div class="project-top">
+              <span class="project-badge">Enterprise SaaS</span>
+              <div class="project-links">
+                <a href="https://www.shiptech.in/" target="_blank" rel="noopener noreferrer" class="icon-link" title="Visit Live Platform">🔗</a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://www.shiptech.in/" target="_blank" rel="noopener noreferrer">ShipTech Logistics Platform</a>
+            </h3>
+            <p class="project-desc">
+              Multi-tenant shipping management system connecting merchants with major courier networks to book shipments, decode labels, track status, and manage wallets.
+            </p>
+            <ul class="project-features">
+              <li>Integrated 6 courier partners (Delhivery, Ekart, Amazon Shipping, Shadowfax, Xpressbees, Shree Maruti).</li>
+              <li>Engineered RabbitMQ background workers &amp; webhook receivers for live delivery status updates.</li>
+              <li>Built double-entry wallet calculation APIs and rate card commission ledger.</li>
+            </ul>
+          </div>
+          <div class="project-tags">
+            <span class="p-tag">FastAPI</span>
+            <span class="p-tag">PostgreSQL</span>
+            <span class="p-tag">RabbitMQ</span>
+            <span class="p-tag">Docker</span>
+            <span class="p-tag">AWS EC2/S3</span>
+          </div>
+        </div>
+
+        <!-- Project 2: Cricket Analytics -->
+        <div class="project-card" data-category="ai">
+          <div>
+            <div class="project-top">
+              <span class="project-badge">AI Platform</span>
+              <div class="project-links">
+                <a href="https://cbtfcricstats.ai" target="_blank" rel="noopener noreferrer" class="icon-link" title="Visit Live Platform">🔗</a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://cbtfcricstats.ai" target="_blank" rel="noopener noreferrer">Cricket Analytics &amp; Predictions</a>
+            </h3>
+            <p class="project-desc">
+              AI-powered sports statistics platform delivering live match insights, team predictive metrics, player stats, and automated commentary via LLMs.
+            </p>
+            <ul class="project-features">
+              <li>Connected OpenAI ChatGPT and Anthropic Claude APIs for automated match summaries and predictions.</li>
+              <li>Built backend APIs using FastAPI to fetch, aggregate, and calculate statistical cricket models.</li>
+              <li>Delivered dynamic interactive dashboards with React.js for real-time visualization.</li>
+            </ul>
+          </div>
+          <div class="project-tags">
+            <span class="p-tag">FastAPI</span>
+            <span class="p-tag">React.js</span>
+            <span class="p-tag">OpenAI API</span>
+            <span class="p-tag">Claude AI</span>
+            <span class="p-tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <!-- Project 3: Global Sports Network -->
+        <div class="project-card" data-category="web">
+          <div>
+            <div class="project-top">
+              <span class="project-badge">Sports Network</span>
+              <div class="project-links">
+                <a href="https://eagleglobalsportsnetwork.com/" target="_blank" rel="noopener noreferrer" class="icon-link" title="Visit Live Platform">🔗</a>
+              </div>
+            </div>
+            <h3 class="project-title">
+              <a href="https://eagleglobalsportsnetwork.com/" target="_blank" rel="noopener noreferrer">Global Sports Network</a>
+            </h3>
+            <p class="project-desc">
+              Community platform connecting athletes, trainers, and sports clubs with interactive profiles, live chat messaging, and media feeds.
+            </p>
+            <ul class="project-features">
+              <li>Developed REST APIs for athlete profiles, club registration, and post publishing.</li>
+              <li>Implemented real-time messaging and alerts powered by Socket.IO.</li>
+              <li>Structured MongoDB collections with indexing to ensure swift feed retrieval.</li>
+            </ul>
+          </div>
+          <div class="project-tags">
+            <span class="p-tag">Node.js</span>
+            <span class="p-tag">Express.js</span>
+            <span class="p-tag">MongoDB</span>
+            <span class="p-tag">Socket.IO</span>
+            <span class="p-tag">JWT</span>
+          </div>
+        </div>
+
+        <!-- Project 4: Rally-Up -->
+        <div class="project-card" data-category="web">
+          <div>
+            <div class="project-top">
+              <span class="project-badge">Event Tech</span>
+            </div>
+            <h3 class="project-title">Rally-Up – Event Management</h3>
+            <p class="project-desc">
+              Event ticketing and booking platform with interactive venue seat maps, schedule planning, and payment processing.
+            </p>
+            <ul class="project-features">
+              <li>Engineered booking endpoints handling seat locks, reservation confirmations, and ticket PDFs.</li>
+              <li>Integrated secure payment confirmation webhooks and transaction logging in MySQL.</li>
+            </ul>
+          </div>
+          <div class="project-tags">
+            <span class="p-tag">Node.js</span>
+            <span class="p-tag">Express.js</span>
+            <span class="p-tag">React.js</span>
+            <span class="p-tag">MySQL</span>
+            <span class="p-tag">JWT</span>
+          </div>
+        </div>
+
+        <!-- Project 5: TCFS CRM -->
+        <div class="project-card" data-category="logistics">
+          <div>
+            <div class="project-top">
+              <span class="project-badge">CRM Platform</span>
+            </div>
+            <h3 class="project-title">TCFS – Customer Relationship Tool</h3>
+            <p class="project-desc">
+              Enterprise CRM for sales lead tracking, customer support ticketing, automated pipeline scoring, and role-based permissions.
+            </p>
+            <ul class="project-features">
+              <li>Created lead progression stages and automatic sales rep assignment rules.</li>
+              <li>Built internal ticketing engine with audit logs and fine-grained access control in PostgreSQL.</li>
+            </ul>
+          </div>
+          <div class="project-tags">
+            <span class="p-tag">Node.js</span>
+            <span class="p-tag">Express.js</span>
+            <span class="p-tag">PostgreSQL</span>
+            <span class="p-tag">JWT</span>
+          </div>
+        </div>
+
+        <!-- Project 6: Zoom Consultation -->
+        <div class="project-card" data-category="web">
+          <div>
+            <div class="project-top">
+              <span class="project-badge">Video Telehealth</span>
+            </div>
+            <h3 class="project-title">Zoom Video Consultation Platform</h3>
+            <p class="project-desc">
+              Video scheduling and consultation platform integrating Zoom Video SDK for one-on-one and group appointments with automated recording triggers.
+            </p>
+            <ul class="project-features">
+              <li>Integrated Zoom Video SDK APIs for dynamic meeting room generation.</li>
+              <li>Automated meeting reminder notifications and post-session recording access.</li>
+            </ul>
+          </div>
+          <div class="project-tags">
+            <span class="p-tag">Node.js</span>
+            <span class="p-tag">React.js</span>
+            <span class="p-tag">Zoom Video SDK</span>
+          </div>
+        </div>
+
+        <!-- Project 7: SpinQuest -->
+        <div class="project-card" data-category="web">
+          <div>
+            <div class="project-top">
+              <span class="project-badge">Gamified Fitness</span>
+            </div>
+            <h3 class="project-title">SpinQuest – Fitness Gaming App</h3>
+            <p class="project-desc">
+              Fitness platform where cyclists track rides and earn XP points and virtual coins to unlock avatar gear and compete on leaderboards.
+            </p>
+            <ul class="project-features">
+              <li>Engineered mathematical distance-to-XP reward conversion algorithms.</li>
+              <li>Built real-time leaderboards and in-app avatar shop purchasing mechanics.</li>
+            </ul>
+          </div>
+          <div class="project-tags">
+            <span class="p-tag">Node.js</span>
+            <span class="p-tag">Express.js</span>
+            <span class="p-tag">MySQL</span>
+            <span class="p-tag">Rewards Engine</span>
+          </div>
+        </div>
+
+        <!-- Project 8: E-Commerce Platform -->
+        <div class="project-card" data-category="web">
+          <div>
+            <div class="project-top">
+              <span class="project-badge">E-Commerce</span>
+            </div>
+            <h3 class="project-title">E-Commerce Backend Platform</h3>
+            <p class="project-desc">
+              Full-featured online store backend supporting product catalogues, cart checkout, payment gateways, and vendor management.
+            </p>
+            <ul class="project-features">
+              <li>Built multi-category catalog search, inventory tracking, and payment processing.</li>
+              <li>Implemented role-based vendor dashboards and order fulfillment workflows.</li>
+            </ul>
+          </div>
+          <div class="project-tags">
+            <span class="p-tag">Node.js</span>
+            <span class="p-tag">Express.js</span>
+            <span class="p-tag">MySQL</span>
+            <span class="p-tag">JWT</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CREATIVE FEATURE 2: Production Codebase Folder Structure & IDE Explorer -->
+  <section class="codebase-section" id="codebase">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Production Architecture</div>
+        <h2 class="section-title">Microservices Codebase Explorer</h2>
+        <p class="section-desc">Inspect how I structure production enterprise code bases: modular domain services, asynchronous event workers, clean API routes, and container orchestration.</p>
+      </div>
+
+      <div class="ide-window">
+        <!-- Window Top Bar -->
+        <div class="ide-topbar">
+          <div class="terminal-dots">
+            <span class="tdot red"></span>
+            <span class="tdot yellow"></span>
+            <span class="tdot green"></span>
+          </div>
+          <div class="ide-window-title">
+            <span>📁 logistics-platform-mono</span>
+            <span>/</span>
+            <span id="ideFilePath">services/logistics-fastapi/app/routers/shipments.py</span>
+          </div>
+          <div class="ide-status-item" id="ideLangTag" style="font-size:0.75rem; color:var(--accent-primary); font-family:var(--font-mono); font-weight:600;">
+            Python (FastAPI)
+          </div>
+        </div>
+
+        <!-- Window Layout: Sidebar Tree + Editor -->
+        <div class="ide-layout">
+          <!-- Explorer Sidebar -->
+          <div class="ide-sidebar">
+            <div class="explorer-header">
+              <span>EXPLORER</span>
+              <span style="opacity: 0.6;">⚙️</span>
+            </div>
+
+            <!-- Folder 1: FastAPI Microservice -->
+            <div class="tree-folder">
+              <div class="folder-title">
+                <span>📁</span>
+                <span>services/logistics-fastapi</span>
+              </div>
+              <div class="folder-items">
+                <div class="tree-file active-file" data-file="shipments.py">
+                  <span>📄</span>
+                  <span>shipments.py</span>
+                </div>
+                <div class="tree-file" data-file="courier_adapter.py">
+                  <span>📄</span>
+                  <span>courier_adapter.py</span>
+                </div>
+                <div class="tree-file" data-file="rabbitmq_worker.py">
+                  <span>📄</span>
+                  <span>rabbitmq_worker.py</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Folder 2: API Gateway -->
+            <div class="tree-folder">
+              <div class="folder-title">
+                <span>📁</span>
+                <span>services/api-gateway</span>
+              </div>
+              <div class="folder-items">
+                <div class="tree-file" data-file="server.js">
+                  <span>📄</span>
+                  <span>server.js</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Folder 3: React Frontend -->
+            <div class="tree-folder">
+              <div class="folder-title">
+                <span>📁</span>
+                <span>frontend-react</span>
+              </div>
+              <div class="folder-items">
+                <div class="tree-file" data-file="LiveTracker.jsx">
+                  <span>⚛️</span>
+                  <span>LiveTracker.jsx</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Folder 4: Infrastructure -->
+            <div class="tree-folder">
+              <div class="folder-title">
+                <span>📁</span>
+                <span>infrastructure</span>
+              </div>
+              <div class="folder-items">
+                <div class="tree-file" data-file="docker-compose.yml">
+                  <span>🐳</span>
+                  <span>docker-compose.yml</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Editor Pane -->
+          <div class="ide-editor-pane">
+            <div class="ide-tabs" id="ideTabsContainer">
+              <div class="ide-tab active-tab" data-file="shipments.py">
+                <span>📄</span>
+                <span>shipments.py</span>
+              </div>
+              <div class="ide-tab" data-file="courier_adapter.py">
+                <span>📄</span>
+                <span>courier_adapter.py</span>
+              </div>
+              <div class="ide-tab" data-file="server.js">
+                <span>📄</span>
+                <span>server.js</span>
+              </div>
+              <div class="ide-tab" data-file="LiveTracker.jsx">
+                <span>⚛️</span>
+                <span>LiveTracker.jsx</span>
+              </div>
+              <div class="ide-tab" data-file="docker-compose.yml">
+                <span>🐳</span>
+                <span>docker-compose.yml</span>
+              </div>
+            </div>
+
+            <div class="ide-code-wrapper" id="ideCodeDisplay">
+              <!-- Code injected dynamically via script.js -->
+            </div>
+
+            <div class="ide-statusbar">
+              <div class="ide-status-item">
+                <span>⚡ UTF-8</span>
+                <span>•</span>
+                <span>LF</span>
+                <span>•</span>
+                <span>Git: production (synced)</span>
+              </div>
+              <div class="ide-status-item">
+                <span>🛡️ Clean Architecture &amp; SOLID</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CREATIVE FEATURE 3: Interactive Developer Terminal Widget -->
+  <section id="terminal" style="padding-top: 2rem;">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Interactive Terminal</div>
+        <h2 class="section-title">Developer Shell (CLI Mode)</h2>
+        <p class="section-desc">Prefer interacting via command line? Type commands into the shell or click the quick action chips below.</p>
+      </div>
+
+      <div class="terminal-card">
+        <div class="t-bar">
+          <div class="terminal-dots">
+            <span class="tdot red"></span>
+            <span class="tdot yellow"></span>
+            <span class="tdot green"></span>
+          </div>
+          <div class="t-tabs">
+            <span class="t-tab active">bash: ~/sutrishna</span>
+            <span class="t-tab">api_spec.json</span>
+          </div>
+          <span style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-mono);">v2.4.0</span>
+        </div>
+
+        <div class="t-content">
+          <div id="devTerminalHistory">
+            <div class="t-line">
+              <span class="t-prompt">sutrishna@dev:~$</span> <span class="t-cmd">welcome</span>
+            </div>
+            <div class="t-output">
+🚀 Welcome to Sutrishna Bera's interactive terminal!
+Type <span style="color:var(--accent-primary)">help</span> to see all available commands, or click any chip below:
+            </div>
+          </div>
+
+          <!-- Quick Action Chips -->
+          <div class="t-quick-pills">
+            <span class="t-pill" data-cmd="skills">⚡ skills</span>
+            <span class="t-pill" data-cmd="projects">🚀 projects</span>
+            <span class="t-pill" data-cmd="arch">🏛️ arch</span>
+            <span class="t-pill" data-cmd="bio">👤 bio</span>
+            <span class="t-pill" data-cmd="contact">✉️ contact</span>
+            <span class="t-pill" data-cmd="hire">🤝 hire</span>
+            <span class="t-pill" data-cmd="clear">🧹 clear</span>
+          </div>
+
+          <!-- Command Line Input -->
+          <div class="t-input-line">
+            <span class="t-prompt">sutrishna@dev:~$</span>
+            <input type="text" id="devTerminalInput" class="t-input" placeholder="type a command (e.g. skills, projects, hire)..." autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Career History</div>
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-desc">My 6+ year journey building software, leading backend projects, and delivering reliable code.</p>
+      </div>
+
+      <div class="timeline">
+
+        <!-- Role 1: Senior Backend Developer -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <div class="timeline-role">
+                Senior Backend Developer · <span class="timeline-company">Notebrains Software Services</span>
+              </div>
+              <div class="timeline-date">March 2022 – Present · Kolkata, India</div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Responsible for designing and developing backend services and APIs across company projects using <strong>Node.js, Express.js, and Python (FastAPI)</strong>.</li>
+              <li>Design and maintain REST APIs, background task queues with <strong>RabbitMQ</strong>, and webhook listeners for reliable data flow across services.</li>
+              <li>Design database schemas, write efficient queries in <strong>PostgreSQL and MySQL</strong>, and optimize indexes to keep data lookup and reporting fast.</li>
+              <li>Manage containerized deployments using <strong>Docker on AWS (EC2 &amp; S3)</strong>, ensuring high availability and smooth rollouts.</li>
+              <li>Implement secure authentication, role-based access control using <strong>JWT</strong>, and monitor server health and error logs in production.</li>
+              <li>Work closely with frontend developers, product managers, and QA to plan sprint goals, define API contracts, and deliver features on schedule.</li>
+              <li>Conduct code reviews, establish clean coding standards, and mentor junior and mid-level developers.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Role 2: Software Developer -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <div class="timeline-role">
+                Software Developer · <span class="timeline-company">Fusion Tech Lab</span>
+              </div>
+              <div class="timeline-date">April 2020 – March 2022 · Kolkata, India</div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Built and maintained backend services and REST APIs for web and mobile client applications.</li>
+              <li>Designed relational database tables and queries in MySQL for fast data lookup and reporting.</li>
+              <li>Added user login, role permissions, and integrated payment gateways for checkout systems.</li>
+              <li>Worked closely with frontend developers to design clean API contracts and debug issues quickly.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Role 3: Web Developer Intern -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <div class="timeline-role">
+                Web Developer Intern · <span class="timeline-company">Deveant IT Solution</span>
+              </div>
+              <div class="timeline-date">January 2019 – March 2020 · Kolkata, India</div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Helped build web applications, write backend logic, and manage MySQL databases.</li>
+              <li>Created responsive user interface pages using HTML5, CSS3, JavaScript, and jQuery.</li>
+              <li>Fixed bugs reported by the QA team and added small user-requested features.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Let's Talk</div>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-desc">Have a role, project, or question? Feel free to reach out directly.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Details Card -->
+        <div class="contact-info-card">
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p><a href="mailto:berasutrishna96@gmail.com">berasutrishna96@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Kolkata, West Bengal, India</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🔗</div>
+            <div class="contact-details">
+              <h4>LinkedIn</h4>
+              <p><a href="https://linkedin.com/in/sutrishna-bera" target="_blank" rel="noopener noreferrer">linkedin.com/in/sutrishna-bera</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">🐙</div>
+            <div class="contact-details">
+              <h4>GitHub</h4>
+              <p><a href="https://github.com/piu96" target="_blank" rel="noopener noreferrer">github.com/piu96</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Message Form -->
+        <div class="contact-form-card">
+          <form id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="senderName">Your Name</label>
+              <input type="text" id="senderName" class="form-control" placeholder="e.g. John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="senderEmail">Your Email</label>
+              <input type="email" id="senderEmail" class="form-control" placeholder="e.g. john@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="senderMessage">Message</label>
+              <textarea id="senderMessage" class="form-control" placeholder="Hi Sutrishna, we'd like to discuss an opportunity..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              🚀 Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-text">
+        © 2026 Sutrishna Bera · Built for GitHub Pages · Senior Full Stack &amp; Backend Engineer
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/piu96" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">🐙</a>
+        <a href="https://linkedin.com/in/sutrishna-bera" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">🔗</a>
+        <a href="mailto:berasutrishna96@gmail.com" class="social-btn" title="Email">✉️</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Element -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
